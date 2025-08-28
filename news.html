@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berita Desa</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="container">
+    <h1>Berita Desa</h1>
+    <div id="news-list" class="grid"></div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/main.js"></script>
+  <script>
+    loadPartials();
+    renderNewsList("/data/news.json");
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desa Sukamaju — Beranda</title>
+  <meta name="description" content="Website resmi Desa Sukamaju. Informasi profil desa, berita, potensi, dan layanan." />
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta property="og:title" content="Desa Sukamaju — Beranda" />
+  <meta property="og:description" content="Informasi profil desa, berita, potensi, dan layanan." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <div id="header"></div>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Selamat Datang di Desa Sukamaju</h1>
+      <p>Membangun desa, memperkuat gotong royong, dan memajukan kesejahteraan.</p>
+      <a class="btn" href="news.html">Lihat Berita</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section>
+      <h2>Berita Terbaru</h2>
+      <div id="latest-news" class="grid"></div>
+      <div class="actions">
+        <a class="btn ghost" href="news.html">Semua Berita</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Potensi Desa</h2>
+      <p>Desa Sukamaju memiliki potensi utama di sektor pertanian padi, kerajinan bambu, dan wisata alam.</p>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/main.js"></script>
+  <script>
+    loadPartials();
+    renderLatestNews("/data/news.json", 3);
+  </script>
+</body>
+</html>
